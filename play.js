@@ -13,6 +13,22 @@ const connect = function () {
     console.log("Connection established");
     console.log("Writting message to server ");
     conn.write("Name: wxx");
+    console.log("Sending instructions");
+    // setTimeout(() => {
+    //   conn.write("Move: left");
+    // }, 2050);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 2000);
+    // setTimeout(() => {
+    //   conn.write("Move: right");
+    // }, 2100);
+    // setTimeout(() => {
+    //   conn.write("Move: left");
+    // }, 2150);
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 50);
   });
   conn.on("data", (data) => {
     console.log("data: ", data);
