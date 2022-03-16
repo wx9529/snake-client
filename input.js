@@ -16,6 +16,9 @@ const handleUserInput = function (key) {
   if (key === "d") {
     connection.write("Move: right");
   }
+  if (key === "\\") {
+    connection.write("Say: Hi Everyone");
+  }
 };
 const setupInput = function (conn) {
   const stdin = process.stdin;
